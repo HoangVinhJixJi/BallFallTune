@@ -1,8 +1,8 @@
 // models/Song.js
-const { DataTypes } = require('sequelize');
+const { DataTypes } = require("sequelize");
 
-const sequelize = require('../config/db');
-const Song = sequelize.define('Song', {
+const sequelize = require("../config/db");
+const Song = sequelize.define("Song", {
   title: {
     type: DataTypes.STRING,
     allowNull: false
@@ -14,7 +14,7 @@ const Song = sequelize.define('Song', {
   url: {
     type: DataTypes.STRING,
     allowNull: false
-  },
+  }
 
 });
 
