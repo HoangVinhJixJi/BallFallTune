@@ -10,18 +10,14 @@
     "lint": "eslint src/**/*.js",
     "prettier": "prettier --check src/**/*.js",
     "prettier:fix": "prettier --write src/**/*.js",
-    "format": "lint-staged"
+    "format": "lint-staged",
+    "prepare": "husky"
   },
   "lint-staged": {
     "src/**/*.js": [
       "eslint --fix",
       "prettier --write"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "repository": {
     "type": "git",
