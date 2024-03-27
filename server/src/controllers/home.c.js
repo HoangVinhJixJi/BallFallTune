@@ -35,16 +35,17 @@ class HomeController {
     }
   };
 
-  createNewSong = async (req, res, next) => {
+           createNewSong = async (req, res, next) => {
     try {
+
       // Tạo một bản ghi mới trong bảng "songs"
-      const song = await Song.create({ title: 'cupid3', artist: 'j2ack', url: '123asdsd' });
-      console.log('Created Song:', song.toJSON());
-      res.status(200).json({ message: 'Created Song successfully', song: song.toJSON() });
+      const song = await Song.create({ title: 'cupid3', artist: 'j2ack', url: '123asdsd' })
+               console.log('Created Song:', song.toJSON());
+               res.status(200).json({ message: 'Created Song successfully', song: song.toJSON() })
     } catch (error) {
       next(error);
-      console.error('Error creating Song:', error);
-      res.status(500).json({ error: 'Internal Server Error' });
+              console.error('Error creating Song:', error);
+            res.status(500).json({ error: 'Internal Server Error' })
     }
   };
 }
