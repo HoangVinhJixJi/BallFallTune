@@ -28,7 +28,6 @@ function animate() {
   cube.rotation.y += 0.01;
   edgeLines.rotation.x += 0.01;
   edgeLines.rotation.y += 0.01;
-
   renderer.render(scene, camera);
 }
 
