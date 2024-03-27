@@ -4,25 +4,29 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: "standard",
+  extends: [
+    'standard',
+    'prettier'
+  ],
+  plugins: [
+    'prettier'
+  ],
   overrides: [
     {
       env: {
         node: true
       },
       files: [
-        ".eslintrc.{js,cjs}"
+        '.eslintrc.{js,cjs}'
       ],
       parserOptions: {
-        sourceType: "script"
+        sourceType: 'script'
       }
     }
   ],
   parserOptions: {
-    ecmaVersion: "latest"
+    ecmaVersion: 'latest'
   },
   rules: {
-    semi: ["error", "always"],
-    quotes: ["error", "double"]
   }
-};
+}
