@@ -37,13 +37,16 @@ sequelize
     console.log('Connected to the database.');
   })
   .catch((err) => {
-    console.error('Unable to connect to the database:', err);
+                  console.error('Unable to connect to the database:', err)
+
+
   });
 
 // Routes
-const routes = require('./routes'); // Default is index.js
-app.use('/', routes);
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT} http://localhost:${PORT}`);
+                 const routes = require('./routes') // Default is index.js
+                  app.use('/', routes);
+
+         app.listen(PORT, () => {
+                console.log(`Server is running on port ${PORT} http://localhost:${PORT}`);
 });

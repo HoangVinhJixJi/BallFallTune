@@ -13,5 +13,5 @@ const mysqlConfig = {
   },
 };
 
-const sequelize = new Sequelize(mysqlConfig.development)
-module.exports = sequelize
+const sequelize = new Sequelize(mysqlConfig.development);
+module.exports = sequelize;
