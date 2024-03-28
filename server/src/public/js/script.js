@@ -30,5 +30,4 @@ function animate() {
   edgeLines.rotation.y += 0.01;
   renderer.render(scene, camera);
 }
-
-animate();
+setInterval(() => animate(), 10);
