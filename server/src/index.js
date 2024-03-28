@@ -2,7 +2,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const handlebars = require('express-handlebars');
-const sequelize = require('./config/db');
+// const sequelize = require('./config/db');
 const path = require('path');
 dotenv.config();
 
@@ -31,15 +31,15 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // Test connection
-sequelize
+// sequelize
 
-  .authenticate()
-  .then(() => {
-    console.log('Connected to the database.');
-  })
-  .catch((err) => {
-    console.error('Unable to connect to the database:', err);
-  });
+//   .authenticate()
+//   .then(() => {
+//     console.log('Connected to the database.');
+//   })
+//   .catch((err) => {
+//     console.error('Unable to connect to the database:', err);
+//   });
 
 // Routes
 
