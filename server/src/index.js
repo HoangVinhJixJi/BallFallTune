@@ -32,6 +32,7 @@ app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // Test connection
 sequelize
+
   .authenticate()
   .then(() => {
     console.log('Connected to the database.');
